@@ -1,8 +1,8 @@
 import { API_BASE_URL } from '../config'
 import { toSnakeCase, mapKeysToCamelCase } from './format'
 
-const request = async (path, config) => {
-    return await fetch(`${API_BASE_URL}${path}`, {
+const request = (path, config) => {
+    return fetch(`${API_BASE_URL}${path}`, {
         headers: {
             'Content-Type': 'json',
             'Access-Control-Allow-Origin': '*',

@@ -1,7 +1,7 @@
 import React from 'react'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 
-import ExchangeTable from '@/pages'
+import { ExchangeTable, ExchangeDetail } from '@/pages'
 
 const Content = () => {
     return (
@@ -10,8 +10,8 @@ const Content = () => {
                 <Route exact path="/">
                     <ExchangeTable />
                 </Route>
-                <Route path="/detail/:exchangeId">
-                    <div>details</div>
+                <Route path="/detail/:exChangeId">
+                    <ExchangeDetail />
                 </Route>
             </Switch>
         </Router>

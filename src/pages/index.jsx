@@ -1,3 +1,4 @@
 import ExchangeTable from './ExchangeTable'
+import ExchangeDetail from './ExchangeDetail'
 
-export default ExchangeTable
+export { ExchangeTable, ExchangeDetail }

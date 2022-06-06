@@ -9,7 +9,7 @@ const ExchangeTableButton = ({ name, id: id }) => {
         <div className="name-form">
             <div
                 className="name-form__text"
-                onClick={() => history.push('detail/${id}')}
+                onClick={() => history.push(`detail/${id}`)}
             >
                 {name}
             </div>
