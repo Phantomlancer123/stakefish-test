@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #eee;
+}
+
+.main {
+    &__container {
+        max-width: 1200px;
+        margin-top: 60px;
+        padding: 20px;
+    }
+
+    &__header {
+        background: #eee;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-family: fantasy;
+        animation-name: heardercolorchange;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+    }
+
+    &__footer {
+        background: #585858;
+        text-align: left;
+        font-size: initial;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 55px;
+        z-index: 3;
+    }
+
+    &__layout {
+        background: #eee;
+    }
+    @keyframes heardercolorchange {
+        0% {
+            background-color: #3e3434;
+        }
+        25% {
+            background-color: cadetblue;
+        }
+        50% {
+            background-color: #009aff;
+        }
+        75% {
+            background-color: green;
+        }
+        100% {
+            background-color: black;
+        }
+    }
+}
