@@ -8,13 +8,16 @@ body {
     background-color: #eee;
 }
 
-.main {
-    &__container {
-        max-width: 1200px;
-        margin-top: 60px;
-        padding: 20px;
-    }
+.main__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #eee;
+    margin-top: 60px;
+}
 
+.main {
     &__header {
         background: #eee;
         color: rgb(255, 255, 255);
