@@ -5,4 +5,7 @@ describe('exchange_page_spec.cy.js', () => {
     it('list with the first ten exchanges', () => {
         cy.get('.ant-table-row').should('have.length', 10)
     })
+    it('show high-level information (name, country, URL, logo, trust rank, trust score)', () => {
+        cy.get('.ant-table-row').find('td').should('have.length', 60)
+    })
 })
