@@ -1,0 +1,9 @@
+.name-form {
+    display: flex;
+    align-items: center;
+
+    &__text {
+        margin-left: 10px;
+        cursor: pointer;
+    }
+}
