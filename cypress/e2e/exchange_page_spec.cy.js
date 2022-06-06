@@ -17,4 +17,7 @@ describe('exchange_page_spec.cy.js', () => {
             .find('.name-form')
             .click()
     })
+    it('show details on a separate page (name, country, trust rank, logo, year of establishment, social media links, description)', () => {
+        cy.get('.exchange-detail__layer > div').should('have.length', 7)
+    })
 })
