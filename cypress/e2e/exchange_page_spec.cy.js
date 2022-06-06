@@ -1,3 +1,9 @@
+Cypress.on('uncaught:exception', (err, runnable) => {
+    if (err.message.includes('ResizeObserver loop limit exceeded')) {
+        return false
+    }
+})
+
 describe('exchange_page_spec.cy.js', () => {
     it('should visit', () => {
         cy.visit('/')
@@ -19,5 +25,8 @@ describe('exchange_page_spec.cy.js', () => {
     })
     it('show details on a separate page (name, country, trust rank, logo, year of establishment, social media links, description)', () => {
         cy.get('.exchange-detail__layer > div').should('have.length', 7)
+    })
+    it('go back to homepage', () => {
+        cy.get('.exchange-detail__action > button').click()
     })
 })
